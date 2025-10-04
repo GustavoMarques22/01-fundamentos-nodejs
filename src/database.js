@@ -18,9 +18,6 @@ export class DataBase {
     fs.writeFile(databasePath, JSON.stringify(this.#database))
   }
 
-  // {name: "Gustavo", email: "Gustavo" }
-  // [ , ['email', 'Gustavo'] ]
-
   select(table, search) {
     let data = this.#database[table] ?? []
 
